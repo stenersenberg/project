@@ -19,6 +19,20 @@ public class Application extends Controller {
         render();
 
         }
+    
+    public static void getController() {
+       
+        render();
+    }
+    
+        public static void getUser() {
+            
+        String id = params.get("user");
+   
+            
+        String res = id + "you got it";
+        render(res);
+    }
 
 
 }

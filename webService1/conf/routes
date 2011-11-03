@@ -2,6 +2,12 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+
+GET /getUser/           Application.getUser
+
+GET /getController            Application.getController
+
+
 GET /webservices/sum/{str}            Application.sum(format:'xml')
 
 
