@@ -3,7 +3,7 @@
 # ~~~~
 
 
-GET /tester/{text}          Application.sum2
+GET /sum2/{text}          Application.sum2
 
 GET /sum/{text}            Application.sum
 
