@@ -1,0 +1,57 @@
+#{extends 'main.html' /}
+#{stylesheet 'index.css' /}
+
+
+
+<!--
+
+<div class="frame">
+
+
+
+<h1>Webservice</h1>
+
+
+
+<form action="@{Application.sum()}" method="POST">
+
+
+    <span>Hva heter du?</span>
+    <br>
+    <br>
+
+    <input type="text" name="text" />
+    <br>
+    <br>
+    <input type="submit" name="conv" value="Trykk her!" />
+
+</form>
+
+</div>
+-->
+<div class="frame">
+
+<h1>Webservice 2</h1>
+
+
+
+<form action="@{Application.sum()}" method="POST" onSubmit="test()">
+
+
+    <span>Hva heter du?</span>
+    <br>
+    <br>
+
+    <input type="text" name="text" id="text" />
+    <br>
+    <br>
+    <input type="submit" name="conv" value="Trykk her!"/>
+
+</form>
+
+</div>
+
+<div id="result">
+
+</div>
+
