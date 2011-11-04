@@ -12,23 +12,7 @@
         <script src="@{'/public/javascripts/jquery-1.5.2.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}
 
-        <script type="text/javascript">
-            function test(){
-
-            var text = $("#text").val()
-            event.preventDefault()
-            var listAction = #{jsAction @sum(':text') /}
-            $('#result').fadeOut("slow");
-             $('#result').fadeIn("slow");
-            $('#result').load(
-            listAction({text: text}),
-            function() {
-                $('#content').css('visibility', 'visible')
-
-            }
-        )
-            }
-        </script>
+  
 
     </head>
     <body>

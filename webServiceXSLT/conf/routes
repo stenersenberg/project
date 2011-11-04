@@ -3,6 +3,12 @@
 # ~~~~
 
 
+GET /raw         Application.raw
+
+GET /testapp         Application.testapp
+
+GET /index2          Application.index2
+
 
 GET /sum2/{text}          Application.sum2
 

@@ -3,7 +3,9 @@
 # ~~~~
 
 
-GET /getUser/           Application.getUser
+# Home page
+GET     /test                                     Application.test
+GET /getUser/{user}         Application.getUser
 
 GET /getController            Application.getController
 
