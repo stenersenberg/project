@@ -18,5 +18,9 @@ public class Services extends Controller {
         String res = user + "you got it";
         render(res);
     }
+       
+    public static void getPicture(){
+    render();
+    }
 
 }

@@ -19,14 +19,23 @@ public class Application extends Controller {
        public static void index()
   {
     F.Promise<WS.HttpResponse> remoteCall1 = WS.url("http://localhost:9000/getController").getAsync();
- 
+    
  
 
         HttpResponse httpResponse = await(remoteCall1); // request gets suspended here
     
     String content = httpResponse.getString();
     
-    render(content);
+    
+    F.Promise<WS.HttpResponse> remoteCall2 = WS.url("http://localhost:9000/getPicture").getAsync();
+ 
+ 
+
+        HttpResponse httpResponse2 = await(remoteCall2); // request gets suspended here
+    
+    String content2 = httpResponse2.getString();
+    
+    render(content, content2);
   }
     
            

@@ -11,6 +11,9 @@ GET /getUser/{user}         Services.getUser
 
 GET /getController            Services.getController
 
+GET /getPicture            Services.getPicture
+
+
 
 
 
