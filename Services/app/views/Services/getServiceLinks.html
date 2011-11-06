@@ -1,0 +1,32 @@
+#{stylesheet 'getServiceLinks.css' /}
+
+
+<script type="text/javascript">
+    
+        $(".link").click(function () {
+        var value = $(".link").attr("href");
+        alert(value );
+    });
+    
+    
+    function link(){
+              
+               
+        var link = event.attr("href");
+        event.preventDefault();
+              alert(link);
+              
+        $.get('http://localhost:9000/'+ link, function(data) {
+            $('#spor').html(data);
+ 
+        });
+              
+    }
+</script>
+
+<div id="spor">
+    <a href="getController"  class="link">Les Nyheter</a>
+    <a href="#" class="link">Aktuelt</a>
+    <a href="#" class="link">Solsiden</a>
+    <a href="#" class="link">Hjem</a>
+</div>

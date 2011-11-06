@@ -1,0 +1,14 @@
+a {
+
+    color: black;
+    font-size: 15px;
+    background: #3399CC;
+    text-align: center;
+    width: 200px;
+    padding: 3px;
+    text-decoration: none;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+
+}
