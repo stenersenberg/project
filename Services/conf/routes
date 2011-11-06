@@ -7,6 +7,8 @@
 # Home page
 GET     /                                       Application.index
 
+GET /getServiceLinks        Services.getServiceLinks
+
 GET /getUser/{user}         Services.getUser
 
 GET /getController            Services.getController

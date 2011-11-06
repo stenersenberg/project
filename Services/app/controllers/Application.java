@@ -18,7 +18,7 @@ public class Application extends Controller {
       
        public static void index()
   {
-    F.Promise<WS.HttpResponse> remoteCall1 = WS.url("http://localhost:9000/getController").getAsync();
+    F.Promise<WS.HttpResponse> remoteCall1 = WS.url("http://localhost:9000/getServiceLinks").getAsync();
     
  
 
@@ -38,15 +38,6 @@ public class Application extends Controller {
     render(content, content2);
   }
     
-           
-           
-           
         
-      public static  String getInterface(){
-      
-            HttpResponse res = WS.url("http://localhost:9000/getController").get();
-            String content = res.getString();
-            return content;
-}
 
 }   

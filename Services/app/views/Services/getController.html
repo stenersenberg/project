@@ -9,32 +9,10 @@
               
               $.get('http://localhost:9000/getUser/' + user, function(data) {
   $('#puls').html(data);
-  alert('Load was performed.');
+ 
 });
               
             
-                /*$("#puls").load('http://localhost:9000/getUser/' + user,
-                function() {
-                $('#puls').css('color', 'red')
-                  
-            
-                    alert("code was loaded");
-                  
-                }
-            )
-     *
-     *
-     *                  $.ajax( {
-type:'Get',
-url:'http://localhost:9000/getUser/'+ user,
-success:function(data) {
- alert(data);
-}
-
-})
-     *
-     *
-     */
             }
         </script>
         
@@ -42,7 +20,7 @@ success:function(data) {
 
 
 
-<div>
+        <div id="puls">
     <form   onsubmit="test()">
         Username: <input type="text" id="user" name="user" />
         <input type="submit"  value="Submit" />
@@ -52,10 +30,6 @@ success:function(data) {
 
 
      
-    
- <div id="puls">
-
-
-    </div>
+ 
    
 </div>

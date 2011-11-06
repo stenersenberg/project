@@ -22,5 +22,10 @@ public class Services extends Controller {
     public static void getPicture(){
     render();
     }
+    
+      public static void getServiceLinks(){
+    render();
+    }
+
 
 }
